@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calcu.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://www.1001fonts.com/digital-7-font.html?text=CALCULATOR.ONE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One:ital@1&family=Caveat&family=DM+Serif+Display&family=Kdam+Thmor+Pro&family=Pixelify+Sans&family=Roboto&family=Roboto+Slab&family=Rubik+Doodle+Shadow&family=Yuji+Hentaigana+Akari&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="" class="logo">CALCULATOREASE</a>
+            <div class="itmes">
+                <a href=""class="navitmes" >HOME</a>
+                <a href=""class="navitmes">MATH</a>
+                <a href="" class="navitmes">FINANCIAL</a>
+                <a href="" class="navitmes">OTHERS</a>
+            </div>
+            <img src="moon.png" alt="" id="icon">
+        </div>
+        <div>
+            <div class="calculator1">
+                <div class="divleft"><div class="calculator">
+                    <h1 class="heading">CALCULATOR</h1>
+                    <input  class="bar" type="text" id="display" readonly>
+                    <div class="buttons">
+                      <button onclick="clearDisplay()">C</button>
+                      <button onclick="appendToDisplay('7')">7</button>
+                      <button onclick="appendToDisplay('8')">8</button>
+                      <button onclick="appendToDisplay('9')">9</button>
+                      <button onclick="appendToDisplay('/')">/</button>
+                      <button onclick="appendToDisplay('4')">4</button>
+                      <button onclick="appendToDisplay('5')">5</button>
+                      <button onclick="appendToDisplay('6')">6</button>
+                      <button onclick="appendToDisplay('*')">*</button>
+                      <button onclick="appendToDisplay('1')">1</button>
+                      <button onclick="appendToDisplay('2')">2</button>
+                      <button onclick="appendToDisplay('3')">3</button>
+                      <button onclick="appendToDisplay('-')">-</button>
+                      <button onclick="appendToDisplay('0')">0</button>
+                      <button onclick="appendToDisplay('.')">.</button>
+                      <button onclick="calculate()">=</button>
+                      <button onclick="appendToDisplay('+')">+</button>
+                      <button onclick="appendToDisplay('%')">%</button>
+                    </div>
+                  </div></div>
+                <div class="divmiddle">
+                 <div class="percentitems">
+                    <h1>What Is The Percentage Of Given Numbers</h1>
+                    <input type="text" name=""  id="" class="box" placeholder="%">Of
+                    <input type="text" name="" id="" class="box">=
+                    <input type="text" name="" id="" class="box">
+                    <h1 class="result">Result :</h1>
+                    <button class="btn">CALCUALTE <box-icon name='play-circle' class="icon" style="color: greenyellow;"></box-icon></button>
+                 </div>
+                </div>
+                <div class="divright">divright</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var icon= document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("darktheme");
+            if(document.body.classList.contains("darktheme")){
+                icon.src = "pngsun.png" ;
+            } else{
+                icon.src= "moon.png" ;
+            }
+        }
+    </script>
+</body>
+</html>
